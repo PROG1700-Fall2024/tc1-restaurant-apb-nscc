@@ -42,11 +42,11 @@ def main():
 
     ### Display your tax amount
     tax_value = bill_update * TAX_RATE
-    print("Your tax is: {0:.2f}%".format(tax_value))
+    print("Your tax is: ${0:.2f}".format(tax_value)) #had percent sign instead of dollar sign
 
     ### Display your tip amount
     tip_value = bill_update * TIP_RATE
-    print("Your tip is: {0:.2f}%".format(tip_value))
+    print("Your tip is: ${0:.2f}".format(tip_value)) #had percent sign instead of dollar sign
 
     ### Display the bill total amount 
     total_bill = bill_update + tax_value + tip_value
